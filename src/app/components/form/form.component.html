@@ -1,0 +1,24 @@
+<div class="form">
+    <div>
+<label for="Titulo">Titulo</label>
+<input type="text" id="Titulo"[(ngModel)]= "newNoticia.titulo">
+
+
+<label for="Texto">Texto</label>
+<textarea rows="4" cols="50" [(ngModel)]="newNoticia.texto"></textarea>
+
+<label for="imagen"> Imágen</label>
+<input type="text" [(ngModel)]="newNoticia.imagenURL" placeholder="Url de la imágen">
+
+
+<label for="fecha">Fecha de la Noticia</label>
+<input type="date" id="fecha" name="fecha" [(ngModel)]="newNoticia.fecha">
+
+
+<button (click)="guardar()">Enviar</button>
+
+    </div>
+
+
+
+</div>
